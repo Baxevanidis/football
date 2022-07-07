@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset="UTF-8">
+		<title>Page Title</title>
+		<!-- Defines the scale of the page -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Latest compiled and minified Bootsttrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		<!-- Custom styles -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<!--jQuery library, required for botstrap -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<!-- Defines a client-side script -->
+		<script type="text/javascript" src="js/script.js"></script>
+
+		<!-- Include a google font -->
+		<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,900,700italic,600italic,400italic,600,700' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body>
+
+		<!-- WRAP is part of the sticky footer example -->
+		<!-- found at https://getbootstrap.com/2.3.2/examples/sticky-footer-navbar.html -->
+		<div class="wrap">
+			<header>
+				<!-- Found at https://getbootstrap.com/components/#navbar -->
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span>MENU</span>
+							</button>
+							<a class="navbar-brand" href="index.html">The happy Plane</a>
+						</div>
+
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="http://www.boeing.com/">boeing.com</a></li>
+								<li><a href="http://www.boeing.com/space/">Boeing in the space</a></li>
+								<li><a href="http://www.boeing.com/principles/education.page">Boeing and the education</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+			<div class="main-content">
+				<div class="container">
+
+					<!-- Bootstrap panel explained here -->
+					<!-- http://www.w3schools.com/bootstrap/bootstrap_panels.asp -->
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h2>The funny dog + VIDEO</h2> 
+
+							<img src="data:image/jpeg;base64,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" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb" alt="Funny Dog Memes - Home | Facebook" data-noaft="1" style="width: 381px; height: 381.372px; margin: 0px;">
+
+
+							<p>PARIS - 19 June 2017: Boeing unveiled a new model of its best-selling 737 aircraft on Monday, injecting life into a faltering civil aviation market as French President Emmanuel Macron flew in to open the world's biggest airshow in Paris. </p>
+
+							<p>After years of booming orders driven by increased air travel and more fuel-efficient planes, passenger jetmakers are bracing for a slowdown in demand while they focus on meeting tight delivery schedules and ambitious production targets.</p>
+							
+							<blockquote>"The MAX 10 is going to add more value for customers and more energy to the marketplace" - Boeing Chief Executive Dennis Muilenburg said at a presentation ceremony.</blockquote>
+							
+
+							<p>Another important presentation was the program that the have made for virtual reality.</p>
+						
+							<h3>Funny dogs video/h3>
+							<!-- copied from youtube.com -->
+							<!-- remember to change width from "560 to 100%" and height from 315 to 400 -->
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/GzqgZGf43Z0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted">Contact: please write to <a href="mailto:example@mail.com">example@mail.com</a>.</p>
+			</div>
+		</footer>
+
+	</body>
+</html>
